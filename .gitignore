@@ -1,0 +1,8 @@
+.meta*
+*.pdf
+*out*
+*.jar
+*.class
+*org.eclipse.jdt.core.prefs
+*org.eclipse.m2e.core.prefs
+*/log/*
