@@ -1,0 +1,44 @@
+# this file is README file
+# It is a maven build project, requires installed maven on running environement
+
+# Assignements
+___________________________________________________
+# Name	:	Dir	Title		classes
+___________________________________________________
+# A1 	: 	a1/ 	Median redux	v1,v2,v3,v4
+# A2 	: 	a2/ 	Median^3	v4
+
+
+# Generate JAR and build project in project root
+# mvn clean install
+
+# this will clean all the projects inside mapred dir and build them again
+# the JAR will be generated inside [a1 a2]/target directory
+
+# Use the runner tool in project root to selectively run the assignments
+# ./runner.sh [input file path] [-i]
+# -i -- stands for mvn install
+
+# code is present in a1 and a2 src directory
+
+# running mvn clean install in project root will automatically build all the
+# nested projects
+
+# output of each version will be saved in output directory in project root (outside a1 and a2)
+# if not found, please check HDFS /tmp/ directory.
+
+# if runner script fails, go to target directory in a1 and a2 to get the JAR and execute them manually
+
+# A1
+________________________________________________________
+# v1: class:	a1.seq.v1.MedianPriceEvaluator
+# v2: class:	a1.mapred.v2.MedianPriceEvaluator
+# v3: class:	a1.mapred.v3.MedianPriceEvaluator
+# v4: class:	a1.mapred.v4.MedianPriceEvaluator
+
+# A2
+________________________________________________________
+# v4: class:	a2.mapred.v4.ApproxMedianPriceEvaluator
+
+# runner.sh will put the JAR in "jar" directory in project root after every mvn clean install for easy access
+# in case the runner fails to execute.
