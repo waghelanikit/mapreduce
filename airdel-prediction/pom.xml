@@ -5,6 +5,13 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>AirDel</name>
   <description>Airline Delay prediction system</description>
+  <repositories>
+	  <repository>
+		  <id>jitpack.io</id>
+		  <url>https://jitpack.io</url>
+	  </repository>
+  </repositories>
+  
   <build>
   	<plugins>
       <plugin>
@@ -70,5 +77,15 @@
 			<version>0.0.1-SNAPSHOT</version>
 			<scope>compile</scope>
 		</dependency>
+		<dependency>
+			<groupId>net.sf.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>2.3</version>
+		</dependency>
+		<dependency>
+		  <groupId>com.github.sanity</groupId>
+		  <artifactId>quickml</artifactId>
+		  <version>0.5.0</version>
+		</dependency> 
 	</dependencies>
 </project>
